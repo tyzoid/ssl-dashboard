@@ -1,0 +1,18 @@
+{
+	"name": "tyzoid/ssl-dashboard",
+	"type": "project",
+	"description": "A simple ssl monitoring dashboard",
+	"license": "MIT",
+	"homepage": "https://github.com/tyzoid/ssl-dashboard",
+	"authors": [
+		{
+			"name": "Tyler Dence",
+			"email": "tyzoid.d@gmail.com",
+			"homepage": "http://tyzoid.com/",
+			"role": "developer"
+		}
+	],
+    "require": {
+        "jacwright/restserver": "^1.2"
+    }
+}

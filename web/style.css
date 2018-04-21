@@ -1,0 +1,55 @@
+html, body {
+	font-size:16px;
+}
+table {
+	border-spacing: 0px;
+	border-collapse: collapse;
+}
+
+td, th {
+	padding: 10px 20px;
+	border:1px solid rgba(128,128,128,.3);
+	position: relative;
+}
+
+td.cert-status { padding-right: 150px; }
+td.cert-status.cert-unknown { padding-right: 20px; }
+
+td.cert-valid { background-color: rgba(0,255,0,.3); }
+td.cert-error { background-color: rgba(255,0,0,.3); }
+td.cert-unknown { background-color: rgba(128,128,128,.3); }
+
+span.tag {
+	display:inline-block;
+	width:80px;
+	position: absolute;
+	right: 20px;
+	top: 7px;
+	text-align: center;
+	margin-left:150px;
+	border-radius: 3px;
+	padding: 3px 6px;
+}
+
+span.valid-tag {
+	background-color: rgba(0,128,0,.3);
+	border: 1px solid rgba(0,128,0,.8);
+}
+
+span.warn-tag {
+	background-color: rgba(255,128,64,.3);
+	border: 1px solid rgba(255,0,0,.8);
+}
+
+td.cert-approach::after {
+	display: inline-block;
+	content: '!';
+	width: 20px;
+	height: 20px;
+	text-align:center;
+	line-height: 20px;
+	margin-left: 20px;
+	border-radius: 100%;
+	background-color: rgba(255,100,0,.8);
+	border: 1px solid rgba(255,100,0,.8);
+}
